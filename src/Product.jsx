@@ -73,7 +73,7 @@ const Product = ({ productId,image,name,category,price,cart,setCart,priceToUsd }
       <section className="flex flex-col gap-6  w-fit">          
          
           <div className="flex flex-col">
-             <img  className={`rounded-lg -z-0 w-[100%]  ${ quantity ? "border-[2px] border-solid border-red" : " "}`} src={imageBasedOnScreenSize()} /> 
+             <img  className={`rounded-lg -z-0 w-[100%]  ${ quantity ? "border-[2px] border-solid border-red" : " "}`} src={imageBasedOnScreenSize()} alt="product image"/> 
              { !quantity ? 
                
                   <button className="flex items-center justify-center gap-1 self-center z-10 -mt-5 py-2 min-w-[160px] w-[33%]  bg-white rounded-3xl border-[1px] border-solid border-red group" onClick={()=>setQuantityAndCart(quantity+1)}>
