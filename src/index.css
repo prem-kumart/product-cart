@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+
+.svg-red{
+  filter: brightness(0) saturate(100%) invert(30%) sepia(25%) saturate(7367%) hue-rotate(360deg) brightness(82%) contrast(90%);
+}
+ 
+.svg-rose {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(5%) saturate(1527%) hue-rotate(323deg) brightness(90%) contrast(82%);
+}
+
+.svg-rose-black {
+    filter: brightness(0) saturate(100%) invert(4%) sepia(99%) saturate(1408%) hue-rotate(352deg) brightness(98%) contrast(96%);
+}
+
+.color-mix-black-red {
+    background-color: color-mix(in srgb, #000000 25%, #C73B0F 100%)
+}
+
+}
