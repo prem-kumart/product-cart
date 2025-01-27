@@ -4,7 +4,7 @@ import Product from './Product.jsx'
 import Cart from './Cart.jsx'
 
 async function fetchJsonData() {
-  const url = "./src/data.json";
+  const url = "./data.json";
   try {
     const response = await fetch(url);
 
@@ -101,7 +101,7 @@ function App() {
                           <h2 className="text-rose-900 text-2xl font-bold">{priceToUsd(orderTotal)}</h2>
                         </div> 
                         <div className="flex flex-row justify-center items-center gap-[0.5px] bg-rose-50 px-6 py-4 rounded-lg">
-                          <img src="../assets/images/icon-carbon-neutral.svg" alt="carbon neutral icon"/>
+                          <img src="./assets/images/icon-carbon-neutral.svg" alt="carbon neutral icon"/>
                            <p className='text-rose-900 rounded-lg'>This is a <span className="font-medium">carbon-neutral </span>delivery</p>
                         </div>
                         <button className='bg-red rounded-full text-white py-[1em] text-base  hover:color-mix-black-red' onClick={()=>setOrderConfirmed(cart.length !=0 ? true : false)}>
@@ -110,7 +110,7 @@ function App() {
               </div>
               :
                  <div className="flex flex-col justify-center items-center gap-4">
-                    <img src="assets/images/illustration-empty-cart.svg" alt="empty cart image"/>
+                    <img src="../assets/images/illustration-empty-cart.svg" alt="empty cart image"/>
                     <p className="font-red-hat text-color-500">Your added items will appear here</p>
                   </div>
              
@@ -124,7 +124,7 @@ function App() {
             <div className="fixed  z-10 bg-black -top-0 -bottom-0 rounded-xl flex items-end tablet:top-0 tablet:bottom-0 tablet:rounded-none w-[100%] bg-opacity-[0.5] tablet:flex tablet:justify-center tablet:items-center overflow-auto" onClick={startNewOrder}>
              <div className="flex flex-col justify-center w-[100%]  gap-8 p-10 tablet:w-[60%] desktop:w-[33%] bg-white rounded-xl overflow-auto">
               
-               <img className="h-[42px] w-[42px]" src="../assets/images/icon-order-confirmed.svg" alt="check mark" />
+               <img className="h-[42px] w-[42px]" src="./assets/images/icon-order-confirmed.svg" alt="check mark" />
                <div>
                     <h2 className='text-rose-900 text-2xl font-bold font-red-hat'>Order Confirmed</h2>
                     <p className='text-rose-500 text-base font-light font-red-hat'>We hope you enjoy your food</p>
