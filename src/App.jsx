@@ -4,7 +4,7 @@ import Product from './Product.jsx'
 import Cart from './Cart.jsx'
 
 async function fetchJsonData() {
-  const url = "./data.json";
+  const url = "data.json";
   try {
     const response = await fetch(url);
 
@@ -110,7 +110,7 @@ function App() {
               </div>
               :
                  <div className="flex flex-col justify-center items-center gap-4">
-                    <img src="../assets/images/illustration-empty-cart.svg" alt="empty cart image"/>
+                    <img src="assets/images/illustration-empty-cart.svg" alt="empty cart image"/>
                     <p className="font-red-hat text-color-500">Your added items will appear here</p>
                   </div>
              
