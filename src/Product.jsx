@@ -78,7 +78,7 @@ const Product = ({ productId,image,name,category,price,cart,setCart,priceToUsd }
                
                   <button className="flex items-center justify-center gap-1 self-center z-10 -mt-5 py-2 min-w-[160px] w-[33%]  bg-white rounded-3xl border-[1px] border-solid border-red group" onClick={()=>setQuantityAndCart(quantity+1)}>
                      <img src="./assets/images/icon-add-to-cart.svg" alt="Add to cart Icon"/>
-                     <p className='text-[0.75em] text-rose-900 font-medium tracking-normal group-hover:text-red'>Add to Cart</p>
+                     <span className='text-[0.75em] text-rose-900 font-medium tracking-normal group-hover:text-red'>Add to Cart</span>
                   </button>
 
                :
