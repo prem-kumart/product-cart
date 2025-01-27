@@ -26,7 +26,7 @@ const Cart = ({product,cart,setCart,priceToUsd,orderConfirmed}) => {
         </div>
         <div>
           <button className="flex items-center justify-center w-[18px] h-[18px] border-[2px] border-solid border-rose-400 rounded-full group hover:border-rose-900" onClick={()=>removeProductFromCart()}  >
-              <img className="fill-rose-900 m-auto w-[9px] h-[9px] svg-rose group-hover:svg-rose-black" src="../assets/images/icon-remove-item.svg" alt="remove button image" />
+              <img className="fill-rose-900 m-auto w-[9px] h-[9px] svg-rose group-hover:svg-rose-black" src="./assets/images/icon-remove-item.svg" alt="remove button image" />
           </button>
         </div>
     </div>
